@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+        <element label="New field 2" max_length="40" name="new_field_2" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" max_length="40" name="u_choice_7" type="string">
+            <choice>
+                <element label="Choice 1" sequence="0" value="Choice 1"/>
+                <element label="Choice 2" sequence="1" value="Choice 2"/>
+                <element label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element label="New field 3" max_length="40" name="u_integer_1" type="integer"/>
+        <element label="New Reference" mandatory="true" max_length="32" name="u_reference_4" reference="sys_user" type="reference"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_5" reference="sys_user" type="reference"/>
+        <element label="Requested user" max_length="40" name="u_requested_for" reference="sys_user" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="HR"/>
+                <element label="Facilities" sequence="1" value="facilities"/>
+                <element label="Legal" sequence="2" value="legal"/>
+                <element label="your department choice" sequence="3" value="your choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="What needed" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element label="Human resources1" sequence="0" value="hr1"/>
+                <element label="Human resouces2" sequence="1" value="hr2"/>
+                <element label="Legal1" sequence="2" value="legal1"/>
+                <element label="Legal2" sequence="3" value="legal2"/>
+                <element label="facilities1" sequence="4" value="facilities1"/>
+                <element label="facilities2" sequence="5" value="facilities2"/>
+                <element label="your department choice1" sequence="6" value="your_choice1"/>
+                <element label="your department choice2" sequence="7" value="your_choice2"/>
+            </choice>
+        </element>
+    </element>
+</database>
